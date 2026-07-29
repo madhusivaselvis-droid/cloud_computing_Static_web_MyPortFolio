@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#4facfe,#00f2fe);
+    color:white;
+}
+
+.profile{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:20px;
+    font-size:20px;
+}
+
+.btn{
+    text-decoration:none;
+    background:white;
+    color:#0d6efd;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:60px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d6efd;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:150px;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+    font-weight:bold;
+}
+
+.project{
+    background:white;
+    margin:20px auto;
+    max-width:700px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+}
+
+#contact{
+    text-align:center;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
